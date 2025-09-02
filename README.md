@@ -7,20 +7,24 @@ This repository contains a collection of mini-projects developed for various pur
 ### Chatbot
 
 An interactive chatbot application built using:
+
 - React for the frontend
 - Express.js for the API backend
 - FastAPI with LangGraph and Groq for the AI integration
 
 #### Features
+
 - Real-time chat interface
 - Connection to Groq LLM API for intelligent responses
 - Modern Bootstrap UI
 
 #### Setup Instructions
+
 1. Clone the repository
 2. Set up the environment:
 
 **Backend Setup**
+
 ```bash
 cd Chatbot/backend
 pip install -r requirements.txt
@@ -30,6 +34,7 @@ npm install
 ```
 
 **Frontend Setup**
+
 ```bash
 cd Chatbot/frontend
 npm install
@@ -38,18 +43,21 @@ npm install
 3. Run the application:
 
 **Start the Python FastAPI Backend**
+
 ```bash
 cd Chatbot/backend
 python app.py
 ```
 
 **Start the Node.js Express Backend**
+
 ```bash
 cd Chatbot/backend
 npm start
 ```
 
 **Start the React Frontend**
+
 ```bash
 cd Chatbot/frontend
 npm run dev
