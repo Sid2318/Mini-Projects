@@ -1,0 +1,6 @@
+@echo off
+echo Starting Python FastAPI backend...
+start cmd /k python app.py
+echo Starting Node.js Express backend...
+start cmd /k npm start
+echo Both servers should now be running!
