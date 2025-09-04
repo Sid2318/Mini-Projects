@@ -1,7 +1,15 @@
 import cv2
 import numpy as np
-import mediapipe as mp
 import os
+
+# Try to import mediapipe with TensorFlow disabled
+os.environ["MEDIAPIPE_DISABLE_GPU"] = "1"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  # Disable TensorFlow logging
+
+import logging
+logging.disable(logging.WARNING)
+
+import mediapipe as mp
 
 # ---- helpers ----
 def overlay_rgba(dst, src_rgb, mask_a, x, y):
@@ -55,7 +63,7 @@ def warp_png_to_quad(frame, png_rgba, dst_quad):
 
 # ---- setup ----
 # Load multiple glasses
-glasses_files = ["GlassME/glasses1.png", "GlassME/glasses2.png", "GlassME/glasses3.png", "GlassME/glasses4.png", "GlassME/glasses5.png"]
+glasses_files = ["GlassME/backend/images/glasses1.png", "GlassME/backend/images/glasses2.png", "GlassME/backend/images/glasses3.png", "GlassME/backend/images/glasses4.png", "GlassME/backend/images/glasses5.png"]
 glasses_list = []
 
 for f in glasses_files:
