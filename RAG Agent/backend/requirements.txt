@@ -1,0 +1,27 @@
+# Web framework
+fastapi
+uvicorn[standard]
+
+# LangChain core + integrations
+langchain
+langchain-community
+langchain-chroma
+langchain-huggingface
+
+# Document loaders (PDF/TXT etc.)
+pypdf
+python-docx
+
+# Embeddings
+sentence-transformers
+
+# Vector database
+chromadb
+
+# LLM (Groq client)
+groq
+
+# Utils
+numpy
+
+python-multipart

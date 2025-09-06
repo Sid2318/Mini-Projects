@@ -64,3 +64,20 @@ Thumbs.db
 FaceDetection/venv/
 rag-chat-hub/venve/
 **/myenv/
+"RAG Agent"/backend/venv/
+"RAG Agent"/venv/
+
+# Model cache
+**/model_cache/
+**/.cache/
+**/models--*/
+
+# Database files
+**/chroma_db/
+**/db/chroma_db/
+**/*.sqlite
+**/*.sqlite3
+
+# Uploaded files
+**/uploads/
+uploads/
