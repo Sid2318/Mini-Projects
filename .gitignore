@@ -57,7 +57,10 @@ Thumbs.db
 **/ENV/
 **/.env/
 **/virtualenv/
+**/venve/
 python*/
 .DS_Store
 Thumbs.db
 FaceDetection/venv/
+rag-chat-hub/venve/
+**/myenv/
