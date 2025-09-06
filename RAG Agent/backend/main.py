@@ -74,3 +74,4 @@ async def ask_question(q: str):
             status_code=500,
             detail=f"Failed to generate answer: {str(e)}"
         )
+
