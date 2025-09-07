@@ -1,0 +1,10 @@
+transformers
+torch
+requests
+python-dotenv
+selenium
+transformers
+torch
+webdriver-manager
+fastapi
+uvicorn

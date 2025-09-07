@@ -66,6 +66,8 @@ rag-chat-hub/venve/
 **/myenv/
 "RAG Agent"/backend/venv/
 "RAG Agent"/venv/
+"News Summarizer Agent"/backend/venv/
+"News Summarizer Agent"/venv/
 
 # Model cache
 **/model_cache/
