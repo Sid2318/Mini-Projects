@@ -3,17 +3,29 @@ from pydantic import BaseModel
 from transformers import pipeline
 import requests
 import os
+from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from typing import List
 
 # Load environment variables
 load_dotenv()
-API_KEY = os.getenv("NEWS_API_KEY")
-if not API_KEY:
-    raise ValueError("❌ NEWS_API_KEY not found in .env file")
 
 # Initialize FastAPI app
 app = FastAPI(title="News Summarizer Agent", version="1.0")
+
+origins = ["http://localhost:5173"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+API_KEY = os.getenv("NEWS_API_KEY")
+if not API_KEY:
+    raise ValueError("❌ NEWS_API_KEY not found in .env file")
 
 # Summarizer pipeline
 print("⚡ Loading summarizer model...")

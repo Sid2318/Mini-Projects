@@ -1,0 +1,23 @@
+.news-card {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.news-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.news-card p {
+  font-size: 1rem;
+  color: #555;
+}
