@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Welcome, {{ user_email }}</h1>
+    <h2>Your Skills</h2>
+    <ul>
+        {% if skills %}
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No skills added yet.</li>
+        {% endif %}
+    </ul>
+    <a href="{{ url_for('update_profile') }}">Update Skills</a><br>
+    <a href="{{ url_for('recommend') }}">Get Job Recommendations</a><br>
+</body>
+</html>

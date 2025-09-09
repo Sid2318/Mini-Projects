@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Jobs</title>
+</head>
+<body>
+    <h2>Recommended Jobs for {{ user_email }}</h2>
+    <ul>
+        {% for job in recommended_jobs %}
+            <li>
+                <h3>{{ job.jobTitle }} at {{ job.companyName }}</h3>
+                <p>{{ job.jobDescription }}</p>
+                <p>Location: {{ job.location }} | Posted on: {{ job.postedDate }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

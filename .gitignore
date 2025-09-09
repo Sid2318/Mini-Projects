@@ -52,13 +52,18 @@ pnpm-debug.log*
 Thumbs.db
 
 # Virtual Environment
+# Ignore all environment directories comprehensively
 **/venv/
 **/.venv/
 **/ENV/
 **/.env/
 **/virtualenv/
 **/venve/
+**/cnn_env/
+**/*env*/
 python*/
+
+# Specific project environments
 .DS_Store
 Thumbs.db
 FaceDetection/venv/
@@ -68,6 +73,16 @@ rag-chat-hub/venve/
 "RAG Agent"/venv/
 "News Summarizer Agent"/backend/venv/
 "News Summarizer Agent"/venv/
+AI_for_Job_matching/venv/
+"Emotion Detection"/venv/
+"Emotion Detection"/cnn_env/
+ML_for_job_recommendation/venv/
+ML_for_job_recommendation/myenv/
+"Mask Detection"/venv/
+"MediaPipe Hands for Sign Language"/venv/
+"Movment Detection"/venv/
+RAG/venv/
+YT_suggestion/venv/
 
 # Model cache
 **/model_cache/
@@ -83,3 +98,55 @@ rag-chat-hub/venve/
 # Uploaded files
 **/uploads/
 uploads/
+Movment\ Detection/demo_output/
+Emotion\ Detection/archive/fer2013.csv
+
+# Large files
+**/*.zip
+**/*.tar
+**/*.tar.gz
+**/*.rar
+**/*.7z
+**/*.mp4
+**/*.avi
+**/*.mov
+**/*.flv
+**/*.wmv
+**/*.pkl
+**/*.h5
+**/*.hdf5
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.tflite
+**/*.bin
+**/*.weights
+**/*.pb
+**/*.saved_model
+**/*.joblib
+**/*.caffemodel
+**/*.model
+**/*.npy
+**/large_files/
+**/datasets/
+**/data/
+**/model/
+**/models/
+**/checkpoints/
+**/pretrained/
+**/archive/
+Movment\ Detection/archive/
+**/dataset/
+**/*.csv
+**/*.json
+
+# Additional Python environment patterns
+**/.python-version
+**/.pytest_cache/
+**/.coverage
+htmlcov/
+.tox/
+.nox/
+instance/
+.webassets-cache
+.ipynb_checkpoints
