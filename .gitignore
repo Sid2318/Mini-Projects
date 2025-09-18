@@ -83,6 +83,9 @@ ML_for_job_recommendation/myenv/
 "Movment Detection"/venv/
 RAG/venv/
 YT_suggestion/venv/
+DNS/venv/
+movie-recommendation/venv/
+movie-recommendation/node_modules/
 
 # Model cache
 **/model_cache/
@@ -150,3 +153,10 @@ htmlcov/
 instance/
 .webassets-cache
 .ipynb_checkpoints
+
+# Next.js specific
+**/.next/
+**/out/
+**/.vercel
+**/.turbo
+**/.swc/

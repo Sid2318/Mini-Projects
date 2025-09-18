@@ -77,6 +77,72 @@ Details about the job recommendation project.
 
 Details about the YouTube suggestion system.
 
+### Movie Recommendation System
+
+A modern movie recommendation application built using:
+
+- Next.js for the frontend and API routes
+- Tailwind CSS for styling
+- TypeScript for type safety
+
+#### Features
+
+- Browse movie recommendations
+- Parallel card display for movie comparison
+- Responsive design for all devices
+
+#### Setup Instructions
+
+1. Navigate to the movie-recommendation directory:
+
+```bash
+cd movie-recommendation
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
+
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### DNS Traffic Analysis Tools
+
+A collection of tools for capturing and analyzing DNS traffic using Python and Scapy.
+
+#### Features
+
+- DNS packet capture
+- Query logging
+- Traffic analysis
+
+#### Files
+
+- `dns_capture.py`: Basic DNS capture tool
+- `dns_sniffer.py`: DNS traffic sniffing with detailed output
+- `dns_sniffer_add_in_csv.py`: DNS traffic logging to CSV format
+
+#### Setup Instructions
+
+1. Install dependencies:
+
+```bash
+pip install scapy
+```
+
+2. Run the DNS sniffer:
+
+```bash
+sudo python dns_sniffer.py
+```
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
